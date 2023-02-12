@@ -7,7 +7,7 @@
 
 #TODO: Fill up the contents below in order to reference your assignment 3 git contents
 #Link for A3 after changes in finder-test.sh: https://github.com/cu-ecen-aeld/assignments-3-and-later-nihalthirunakarasu/commit/224aad6f2a0385e76fc845d84d64d0c4066cb166
-AESD_ASSIGNMENTS_VERSION = '224aad6f2a0385e76fc845d84d64d0c4066cb166'
+AESD_ASSIGNMENTS_VERSION = '22617326fa64f66c1ced63a652d61484d7e21f10'
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
