@@ -6,8 +6,8 @@
 ##############################################################
 
 #TODO: Fill up the contents below in order to reference your assignment 3 git contents
-#Link for A3 after changes in finder-test.sh: https://github.com/cu-ecen-aeld/assignments-3-and-later-nihalthirunakarasu/commit/224aad6f2a0385e76fc845d84d64d0c4066cb166
-AESD_ASSIGNMENTS_VERSION = '22617326fa64f66c1ced63a652d61484d7e21f10'
+#Link for A3 after changes for socket : https://github.com/cu-ecen-aeld/assignments-3-and-later-nihalthirunakarasu/commit/92b71015dd30f8e555d70a2f286a052a70fd45e4
+AESD_ASSIGNMENTS_VERSION = '520b4ff649ad273e68ee7cbfb874b2d16d56e64a'
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
@@ -17,6 +17,7 @@ AESD_ASSIGNMENTS_GIT_SUBMODULES = YES
 
 define AESD_ASSIGNMENTS_BUILD_CMDS
 	$(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D)/finder-app all
+	$(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D)/server all
 endef
 
 # TODO add your writer, finder and finder-test utilities/scripts to the installation steps below
@@ -27,6 +28,8 @@ define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
 	$(INSTALL) -m 0755 $(@D)/finder-app/finder.sh $(TARGET_DIR)/usr/bin/
 	$(INSTALL) -m 0755 $(@D)/finder-app/writer $(TARGET_DIR)/usr/bin/
 	$(INSTALL) -m 0755 $(@D)/finder-app/finder-test.sh $(TARGET_DIR)/usr/bin/
+	$(INSTALL) -m 0755 $(@D)/server/aesdsocket $(TARGET_DIR)/usr/bin/
+	$(INSTALL) -m 0755 $(@D)/server/aesdsocket-start-stop.sh $(TARGET_DIR)/etc/init.d/S99aesdsocket
 endef
 
 $(eval $(generic-package))
