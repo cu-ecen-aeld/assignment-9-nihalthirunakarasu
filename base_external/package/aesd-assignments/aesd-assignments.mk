@@ -7,7 +7,7 @@
 
 #TODO: Fill up the contents below in order to reference your assignment 3 git contents
 #Link for A3 after changes for socket : https://github.com/cu-ecen-aeld/assignments-3-and-later-nihalthirunakarasu/commit/92b71015dd30f8e555d70a2f286a052a70fd45e4
-AESD_ASSIGNMENTS_VERSION = '520b4ff649ad273e68ee7cbfb874b2d16d56e64a'
+AESD_ASSIGNMENTS_VERSION = '310b9d2638f85dc16cca3d5c7405c3894d24b376'
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
