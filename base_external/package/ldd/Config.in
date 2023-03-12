@@ -1,0 +1,6 @@
+
+config BR2_PACKAGE_LDD
+	bool "ldd"
+	help
+	  Includes the misc-modules and scull modules. Copying the module_load, module_unload, scull_load and scull_unload.
+	  Used to understand buildroot.
